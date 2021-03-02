@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto';
+  text-decoration: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  margin: auto;
+  position: relative;
+}
+
+header {
+  padding: 1rem;
+  -webkit-box-shadow: 0 0 0.5rem #00000066;
+          box-shadow: 0 0 0.5rem #00000066;
+  position: relative;
+  z-index: 1000;
+}
+
+header .logo {
+  text-align: center;
+  font-family: 'Shrikhand', "cursive";
+}
+
+#content .bold-700 {
+  font-weight: 700;
+}
+
+#content .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f3f3f3;
+  position: relative;
+  font-size: 1.2rem;
+  padding: 1.20rem;
+}
+
+#content .location .location__icon {
+  margin: 0 1rem 0 0;
+}
+
+#content .info {
+  padding: 2rem;
+  text-align: center;
+  background: #fafafa;
+}
+
+#content .info .info__sentence {
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+
+#content .info .btn__explore {
+  padding: .75rem 1.5rem;
+  font-size: 1.1rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: .25s;
+  transition: .25s;
+  -webkit-box-shadow: .25rem .25rem 10px #00000045;
+          box-shadow: .25rem .25rem 10px #00000045;
+  border-radius: 5rem;
+  background: #686868 -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
+  background: #686868 linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  font-weight: 500;
+}
+
+#content .tutorial {
+  padding: 2rem 1rem;
+}
+
+#content .tutorial .container ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  counter-reset: ListCount;
+}
+
+#content .tutorial .container ul li {
+  padding: 1.5rem;
+  margin: 1rem 0 1rem .75rem;
+  background: #f6f6f6;
+  border-radius: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-shadow: .25rem .25rem .5rem #00000022;
+          box-shadow: .25rem .25rem .5rem #00000022;
+}
+
+#content .tutorial .container ul li::before {
+  counter-increment: ListCount 1;
+  content: counter(ListCount);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 5rem;
+  background: #9356DC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  position: absolute;
+  left: -.75rem;
+}
+
+#content .tutorial .container ul li i {
+  margin-right: 1rem;
+  color: #7e7e7e;
+}
+
+#content .tutorial .container ul li span {
+  color: #000;
+  font-weight: 400;
+}
+
+#content .restaurants {
+  background: #f6f6f6;
+  padding: 2rem 1rem;
+}
+
+#content .restaurants .container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#content .restaurants .container .cards .card {
+  background: #fff;
+  border-radius: 1rem;
+  position: relative;
+  display: block;
+  margin: 0.5rem 0;
+  -webkit-box-shadow: .25rem .25rem .5rem #00000012;
+          box-shadow: .25rem .25rem .5rem #00000012;
+}
+
+#content .restaurants .container .cards .card img {
+  width: 100%;
+  height: 12rem;
+  border-radius: 1rem 1rem 0 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#content .restaurants .container .cards .card .card__badge--new {
+  background: #99e1cf;
+  color: #138668;
+  padding: .5rem;
+  border-radius: .125rem;
+  position: absolute;
+  top: 1rem;
+  right: .75rem;
+}
+
+#content .restaurants .container .cards .card .card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 .5rem;
+  color: black;
+  padding: 1rem;
+}
+
+#content .restaurants .container .cards .card .card__footer h3 {
+  margin: 0 0 .25rem;
+}
+
+#content .restaurants .container .cards .card .card__footer span {
+  margin: 0;
+}
+
+#content .restaurants .container .cards .card .card__footer .card__heart {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  position: relative;
+  color: #000;
+}
+
+#content .restaurants .container .cards .card .card__footer .card__heart i {
+  font-size: 2em;
+}
+
+footer {
+  padding: 2rem 1rem;
+  background: #383838;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .omf__text {
+  font-family: 'Shrikhand', "cursive";
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+  color: #fff;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: .5rem 0;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer ul li a i {
+  width: 1.2rem;
+  margin-right: .5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .tutorial .container {
+    width: 75%;
+  }
+  .tutorial .container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tutorial .container ul li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0 0 0 5rem;
+  }
+  .tutorial .container ul li:first-child {
+    margin-top: 0;
+    margin-left: .75rem;
+  }
+  .restaurants .container {
+    width: 75%;
+  }
+  .restaurants .container .cards {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+    row-gap: 2rem;
+  }
+}
+/*# sourceMappingURL=default.css.map */
