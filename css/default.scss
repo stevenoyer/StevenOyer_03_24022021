@@ -80,7 +80,7 @@ html, body {
 
 @keyframes LogoAnimate {
     0% {
-        transform: translateY(0);
+        transform: translateY(0) rotate(360deg);
     }
 
     25% {

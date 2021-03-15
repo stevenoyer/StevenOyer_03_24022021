@@ -98,8 +98,8 @@ html, body {
 
 @-webkit-keyframes LogoAnimate {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(0) rotate(360deg);
+            transform: translateY(0) rotate(360deg);
   }
   25% {
     -webkit-transform: translateY(1rem);
@@ -117,8 +117,8 @@ html, body {
 
 @keyframes LogoAnimate {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(0) rotate(360deg);
+            transform: translateY(0) rotate(360deg);
   }
   25% {
     -webkit-transform: translateY(1rem);
