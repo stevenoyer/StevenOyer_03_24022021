@@ -310,6 +310,8 @@ header {
                                     opacity: 1;
                                     background: linear-gradient(0deg,#9356dc,#ff79da);
                                     transition: all 0.5s;
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
                                 }
                             }
                         }
