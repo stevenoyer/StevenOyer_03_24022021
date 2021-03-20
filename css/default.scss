@@ -175,6 +175,11 @@ header {
 
         .btn__explore {
             @include btn;
+
+            &:hover {
+                opacity: 0.8;
+                box-shadow: 0.25rem 0.25rem 10px #000000c9;
+            }
         }
     }
 
@@ -304,8 +309,6 @@ header {
                                 &:hover {
                                     opacity: 1;
                                     background: linear-gradient(0deg,#9356dc,#ff79da);
-                                    -webkit-background-clip: text;
-                                    -webkit-text-fill-color: transparent;
                                     transition: all 0.5s;
                                 }
                             }
