@@ -6,7 +6,7 @@ L'objectif est de développer un site 100% mobile qui répertorie les menus de r
 
 ## Techno utilisées
 - Html
-- Css (animation & preprocesseur SASS)
+- CSS (animation & preprocesseur SASS)
 - Git et GitHub
 
 Accès au projet [OhMyFood](https://ohmyfood.stevenoyer.fr/)
